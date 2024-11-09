@@ -20,4 +20,4 @@ jobs:
       run: chmod +x ./inverted_search.out  # Give execute permission to the file
 
     - name: Run inverted_search.out
-      run: ./inverted_search.out  # Run the 'inverted_search.out' file
+      run: ./inverted_search.out file1.txt file.txt file2.txt # Run the 'inverted_search.out' file
