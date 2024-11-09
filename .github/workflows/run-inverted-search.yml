@@ -1,0 +1,20 @@
+name: Run inverted_search.out and Show Output
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to the 'main' branch
+  pull_request:
+    branches:
+      - main  # Trigger workflow on pull requests to 'main'
+
+jobs:
+  run-inverted-search:
+    runs-on: ubuntu-latest  # Use a Linux runner
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  # Checkout the repository to get the files
+
+    - name: Run inverted_search.out
+      run: ./inverted_search.out  # Run your 'inverted_search.out' file
